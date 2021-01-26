@@ -30,17 +30,12 @@
     
     .contact-footer{
         flex-direction: column;
-        padding: 0;
+        padding: 0 2%;
     }
 
     .contact-us{
-        align-items: center;
         margin-bottom: 24px;
     }
-
-    /* .social-media{
-        flex-direction: column;
-    } */
 
     .social-media i{
         margin-right: 20px;
@@ -48,9 +43,6 @@
 
     .general-services{
         flex-direction: column;
-    }
-
-    .general-services .our-services{
-        align-items: center;
+        padding: 0 2%;
     }
 }
