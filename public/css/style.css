@@ -177,6 +177,22 @@ footer .copy{
     justify-content: center;
 }
 
+#btn_top{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #0c7f919d;
+    color: white;
+    padding: 8px;
+
+    border-radius: 8px;
+    font-size: 30px;
+    transition: 600ms;
+    display: none;
+    cursor: pointer;
+    z-index: 999;
+}
+
 .contact-footer{
     display: flex;
     justify-content: space-between;
