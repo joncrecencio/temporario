@@ -70,6 +70,7 @@ section.visit{
     border-radius: 8px;
     color: #0c7f91;
     font-weight: 300;
+    border:1px solid #0c7f91;
 }
 
 .input-block + .input-block{
