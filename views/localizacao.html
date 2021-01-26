@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="hospital,são,lucas,maternidade,cuidados,saúde">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap" rel="stylesheet">
+     <!-- Make sure you put this AFTER Leaflet's CSS -->
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+    integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+    crossorigin=""></script>
+    <link rel="stylesheet" href="/public/css/style.css">
+    <link rel="stylesheet" href="/public/css/location.css">
+    <link rel="stylesheet" href="/public/css/animation.css">
+    <link rel="stylesheet" href="/public/css/responsivo.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+    integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+    crossorigin=""/>
+    <title>Hospital São Lucas - Localização</title>
+</head>
+<body>
+    <section class="topo">
+        <div class="center">
+            <a href=""><i class="fas fa-phone-alt fone"></i>(13) 2102-5000</a>
+            <a href=""><i class="fab fa-facebook-square"></i></a>
+            <a href=""><i class="fab fa-instagram"></i></a>
+        </div><!--center-->
+    </section>
+    <header>
+        <div class="logo"></div>
+        <div class="menu_desktop">
+            <ul>
+                <li><a href="" class="efeito_btn">O HOSPITAL</a></li>
+                <li><a href="" class="efeito_btn">ESPECIALIDADES</a></li>
+                <li><a href="" class="efeito_btn">CONVÊNIOS</a></li>
+                <li><a href="" class="efeito_btn">TRABALHE CONOSCO</a></li>
+            </ul>
+        </div>
+        <div class="icon">
+            <i class="fas fa-bars active"></i>
+        </div>
+        
+        <div class="menu_mobile">
+            <ul>
+                <li><a href="" >O HOSPITAL</a></li>
+                <li><a href="" >ESPECIALIDADES</a></li>
+                <li><a href="" >CONVÊNIOS</a></li>
+                <li><a href="" >TRABALHE CONOSCO</a></li>
+            </ul>
+        </div>
+
+    </header>
+
+    <main class="location">
+        <div class="center">
+            <section class="visit">
+
+                <div class="fale-conosco">
+                    <form action="" class="form-fale-conosco">
+                        <fieldset>
+                            <legend>Contato</legend>
+                            <div class="input-block">
+                                <label for="name">Digite seu nome*</label>
+                                <input type="text" name="name" id="name" placeholder="Digite seu nome!" maxlength="40" required>
+                            </div><!--input-block-->
+
+                            <div class="input-block">
+                                <label for="whatsapp">Digite seu celular*</label>
+                                <input type="text" name="whatsapp" id="whatsapp" placeholder="Digite seu celular" maxlength="11" required>
+                            </div><!--input-block-->
+
+                            <div class="input-block">
+                                <label for="email">Digite seu e-mail*</label>
+                                <input type="email" name="email" id="naemailme" placeholder="Digite seu e-mail!" maxlength="70" required>
+                            </div><!--input-block-->
+
+                            <div class="input-block">
+                                <label for="instructions">Informe sua dúvida* </label>
+                                <textarea id="instructions" name="instructions" required placeholder="Informe sua dúvida" maxlength="450"></textarea>
+                            </div><!--input-block-->
+
+
+                            <div class="input-block">
+                                <button class="btn">Enviar</button>
+                            </div><!--input-block-->
+                            
+                        </fieldset>
+                    </form>
+                </div><!--fale-conosco-->
+
+                <div id="mapid"></div>
+            </section><!--visit-->
+        </div><!--center-->
+    </main>
+
+
+    <footer>
+        <div class="center">
+
+            <section class="contact-footer">
+                <div class="contact-us">
+                    <p>Fale Conosco:</p>
+                    <div class="headset">
+                        <i class="fas fa-phone-alt"><span>(13) 2102-5000</span></i>
+                    </div><!--headset-->
+                </div><!--contact-us-->
+
+                <div class="contact-us">
+                    <p>Nos acompanhe nas redes sociais:</p>
+                    <div class="social-media">
+                        <i class="fab fa-youtube red"></i>
+                        <i class="fab fa-linkedin-in blue-linkedin"></i>
+                        <i class="fab fa-twitter aquablue"></i>
+                        <i class="fab fa-facebook-f blue"></i>
+                        <i class="fab fa-instagram rose"></i>
+                    </div><!--social-media-->
+                </div><!--contact-us-->
+            </section><!--contact-footer-->
+            
+            <section class="general-services">
+                <div class="our-services">
+                    <h3>Nossos Serviços</h3>
+                    <p>MATERNIDADE</p>
+                    <p>CENTRO CIRÚRGICO</p>
+                    <p>Anatomia Patológica</p>
+                    <p>Artroscopia</p>
+                    <p>Banco de Sangue</p>
+                    <p>Cirurgias por Vídeo</p>
+                    <p>Colonoscopia</p>
+                    <p>Eletrocardiograma</p>
+                    <p>Endoscopia Digestiva Alta</p>
+                    <p>Histeroscopia/Laparoscopia</p>
+                    <p>Laboratório de Análises Clínicas</p>
+                    <p>Nutrição Enteral e Parenteral</p>
+                    <p>Radiologia Intervencionista</p>
+                    <p>Serviço de Hemodinâmica</p>
+                    <p>Tomografia Computadorizada Helicoidal</p>
+                    <p>Ultrassonografia</p>
+                    <p>Ultrassonografia Doppler</p>
+                </div><!--our-services-->
+
+                <div class="our-services">
+                    <h3>Especialidades</h3>
+                    <p>ORTOPEDIA E TRAUMATOLOGIA</p>
+                    <p>ESPECIALIDADES NO CDT</p>
+                    <p>GINECOLOGIA E OBSTETRICIA</p>
+                    <p>ORTOPEDISTA</p>
+                </div><!--our-services-->
+
+                <div class="our-services">
+                    <h3>O Hospital</h3>
+                    <p>Tecnologias Modernas</p>
+                    <p>Estrutura Conceituada</p>
+                    <p>Atendimento em Diversas Especialidades</p>
+                    <p>Qualidade nos serviços prestados</p>
+                </div><!--our-services-->
+            </section><!--general-services-->
+
+            <p class="copy">&copy; Todos os direitos reservados Wayne Technology</p>
+        </div><!--center-->
+
+    </footer>
+
+    <script src="https://kit.fontawesome.com/f4dd9ff78b.js" crossorigin="anonymous"></script>
+    <script src="/public/js/scripts.js"></script>
+    <script src="/public/js/map.js"></script>
+</body>
+</html>

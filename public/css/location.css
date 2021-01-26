@@ -1,0 +1,93 @@
+main.location{
+    width: 100%;
+    padding: 60px 0;
+    background: #00abee07;
+}
+
+section.visit{
+    display: flex;
+    justify-content: space-between;
+}
+
+#mapid{
+    width: 50%;
+    height: 650px;
+}
+
+.fale-conosco{
+    width: 50%;
+}
+
+.form-fale-conosco fieldset{
+    border: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-fale-conosco legend{
+    font-size: 40px;
+    margin-bottom: 32px;
+    text-align: center;
+    color: #0c7f91;
+    font-weight: 400;
+}
+
+.input-block{
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+}
+
+.input-block label{
+    font-size: 24px;
+    font-weight: 400;
+    color: #0c7f91;
+    margin-bottom: 16px;
+}
+
+.input-block input{
+    padding: 16px 12px;
+    line-height: 28px;
+    font-size: 22px;
+    border-radius: 8px;
+    color: #0c7f91;
+    font-weight: 300;
+}
+
+.input-block input:valid,
+.input-block textarea:valid{
+    border: 1px solid #a1e9c5;
+}
+
+.input-block textarea{
+    height: clamp(120px, 160px, 240px);
+    resize: vertical;
+    padding: 16px;
+    line-height: 28px;
+    font-size: 22px;
+    border-radius: 8px;
+    color: #0c7f91;
+    font-weight: 300;
+}
+
+.input-block + .input-block{
+    margin-top: 24px;
+}
+
+.btn{
+    padding: 16px;
+    cursor: pointer;
+    border: 0;
+    border-radius: 8px;
+    background: #0c7f91;
+    color: white;
+    font-size: 20px;
+    transition: 600ms;
+    font-weight: 400;
+}
+
+.btn:hover{
+    transition: 600px;
+    background: #0c7f91de;
+}

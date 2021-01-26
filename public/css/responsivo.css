@@ -23,6 +23,32 @@
     }
 }
 
+@media screen and (max-width: 768px){
+    section.visit{
+        flex-direction: column;
+        width: 100%;
+    }
+
+    #mapid{
+        width: 100%;
+        height: 650px;
+        padding: 0 2%;
+    }
+
+    .fale-conosco{
+        width: 100%;
+    }
+    
+    .form-fale-conosco fieldset{
+        margin-bottom: 52px;
+    }
+
+    .input-block{
+        width: 100%;
+        padding: 0 2%;
+    }
+}
+
 @media screen and (max-width: 650px){
     footer .copy{
         font-size: 10px;
