@@ -6,11 +6,11 @@ main.location{
 
 section.visit{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 #mapid{
-    width: 50%;
+    width: 48%;
     height: 650px;
 }
 

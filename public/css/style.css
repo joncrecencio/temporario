@@ -181,6 +181,15 @@ footer .copy{
     justify-content: center;
 }
 
+footer .copy.dev{
+    margin-top: 8px;
+    font-size: 12px;
+}
+
+footer .copy.dev a{
+    margin-left: 2px;
+}
+
 #btn_top{
     position: fixed;
     bottom: 20px;
@@ -294,5 +303,12 @@ footer .copy{
     text-transform: uppercase;
     font-size: 14px;
     line-height: 28px;
+}
+
+.footer-developer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 

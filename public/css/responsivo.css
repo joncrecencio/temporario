@@ -53,6 +53,10 @@
     footer .copy{
         font-size: 10px;
     }
+
+    footer .copy.dev{
+        font-size: 8px;
+    }
     
     .contact-footer{
         flex-direction: column;

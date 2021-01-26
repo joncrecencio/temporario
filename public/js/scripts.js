@@ -1,3 +1,4 @@
+// Menu Mobile
 let el = document.querySelector('.active')
 el.addEventListener('click', () => {
     // Queremos mostrar o menu
@@ -15,6 +16,7 @@ el.addEventListener('click', () => {
     }
 })
 
+// Funcionalidade do scroll top
 window.onscroll = function(){
     scroll()
 }
