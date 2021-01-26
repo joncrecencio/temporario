@@ -152,7 +152,8 @@ header .menu_desktop a{
 footer{
     width: 100%;
     padding: 25px 2%;
-    background: #0c7f91;
+    /* background: #0c7f91;*/
+    background: rgb(38, 136, 101);
     color: white;
 }
 
