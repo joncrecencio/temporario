@@ -115,10 +115,13 @@ header{
 header .logo{
     width: 200px;
     height: 90px;
-    /*background-color: rgba(53,196,190,1);*/
-    background-image: url(/public/images/sao-lucas-santos-1457988056.jpg);
+    padding: 4px;
     background-repeat: no-repeat;
-    margin-top: 20px;
+}
+
+header .logo img{
+    width: 100%;
+    height: 100%;
 }
 
 header ul {
