@@ -18,14 +18,16 @@ section.visit{
     width: 50%;
 }
 
-.form-fale-conosco fieldset{
+.form-fale-conosco fieldset,
+.form-trabalhe-conosco fieldset{
     border: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.form-fale-conosco legend{
+.form-fale-conosco legend, 
+.form-trabalhe-conosco legend{
     font-size: 36px;
     margin-bottom: 32px;
     text-align: center;
