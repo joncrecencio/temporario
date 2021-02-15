@@ -8,6 +8,13 @@ main.trabalhe-conosco{
     background-repeat: no-repeat;
 }
 
+main.trabalhe-conosco .hidden{
+    display: none;
+}
+
+main.trabalhe-conosco .appear{
+    display: block;
+}
 
 
 
