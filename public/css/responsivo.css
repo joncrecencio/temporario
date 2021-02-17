@@ -30,6 +30,26 @@
         padding: 4px;
         background-repeat: no-repeat;
     }
+
+    .cards{
+        display: grid;
+        grid-template-columns: 1fr;
+        align-items: center;
+        justify-content:center;
+    }
+
+    .banner{
+        width: 100%;
+        height: 200px;
+        min-height: 200px;
+        position: relative;
+        
+    }
+    
+    .banner img.selected{
+        width: 100%;
+        height: 100%;
+    }
     
     section.visit{
         flex-direction: column;
@@ -58,6 +78,10 @@
 
     .input-block .hidden{
         width: 100%
+    }
+
+    main.trabalhe-conosco .appear{
+        width: 100%;
     }
 }
 
