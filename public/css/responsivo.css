@@ -1,4 +1,4 @@
-@media screen and (max-width: 918px){
+@media screen and (max-width: 1024px){
     .menu_desktop{
         display: none;
     }
@@ -83,6 +83,14 @@
     main.trabalhe-conosco .appear{
         width: 100%;
     }
+
+    .menu-search button{
+        margin: 0;
+    }
+
+    .professionals{
+        grid-template-columns: 1fr 1fr;
+    }
 }
 
 @media screen and (max-width: 650px){
@@ -111,4 +119,20 @@
         flex-direction: column;
         padding: 0 2%;
     }
+
 }
+
+@media screen and (max-width: 555px){
+    .professionals{
+        grid-template-columns: 1fr;
+    }
+
+    .professionals#ortopedistaEsp{
+        grid-template-columns: 1fr;
+    }
+
+    main.specialties .menu-search{
+        flex-direction: column;
+    }
+}
+
