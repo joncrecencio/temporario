@@ -2,6 +2,15 @@ main.specialties{
     padding: 48px 0;
 }
 
+main.specialties h1{
+    color: #0c7f91;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 14px 0 48px 0;
+}
+
 main.specialties .center{
     max-width: 800px;
     margin: auto;
@@ -70,7 +79,6 @@ main.specialties .menu-search{
     align-items: center;
     justify-content: center;
     padding: 28px 2%;
-    /* border: 1px solid #0c7f914f; */
     box-shadow: 1px 1px 1px #0c7f914f;
     border-radius: 8px;
     color: #0c7f91;
