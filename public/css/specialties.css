@@ -3,7 +3,7 @@ main.specialties{
 }
 
 main.specialties h1{
-    color: #0c7f91;
+    color: var(--color);
     font-size: 18px;
     display: flex;
     align-items: center;
@@ -37,7 +37,7 @@ main.specialties .menu-search{
 
     border: 1px solid #1414143b;
     border-radius: 8px;
-    color: #0c7f91;
+    color: var(--color);
     font-size: 16px;
     background-color: white;
     overflow: hidden;
@@ -58,7 +58,7 @@ main.specialties .menu-search{
 .profession h2{
     text-align: center;
     padding: 24px 0;
-    color: #0c7f91;
+    color: var(--color);
 }
 
 .professionals{
@@ -81,7 +81,7 @@ main.specialties .menu-search{
     padding: 28px 2%;
     box-shadow: 1px 1px 1px #0c7f914f;
     border-radius: 8px;
-    color: #0c7f91;
+    color: var(--color);
 }
 
 .professional-single p{

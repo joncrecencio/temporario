@@ -14,10 +14,11 @@
     .icon{
         display: flex;
         justify-content: flex-end;
+        cursor: pointer;
     }
 
     .icon i{
-        color: #0c7f91;
+        color: var(--color);
         transform: scale(1.5);
         padding-right: 2%;
     }
