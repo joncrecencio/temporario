@@ -134,10 +134,20 @@
 
     main.specialties .menu-search{
         flex-direction: column;
+        gap: 20px;
+    }
+
+    .menu-search button span{
+        padding: 12px 0;
     }
 
     main.specialties h1{
         text-align: center;
+    }
+
+    .menu-search button{
+        width: 70%;
+        height: auto;
     }
 }
 

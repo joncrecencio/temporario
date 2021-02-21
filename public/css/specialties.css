@@ -1,5 +1,5 @@
 main.specialties{
-    padding: 48px 0;
+    padding: 104px 0 208px 0;
 }
 
 main.specialties h1{
@@ -54,6 +54,7 @@ main.specialties .menu-search{
     width: 100%;
     height: 100%; 
 }
+
 
 .profession h2{
     text-align: center;
