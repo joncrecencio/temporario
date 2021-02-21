@@ -9,6 +9,7 @@ function upLoadInput(){
     })
 }
 
+// Função para o formulário
 function submit(e){
     e.preventDefault()
 
