@@ -1,12 +1,20 @@
 main.location{
     width: 100%;
     padding: 60px 0;
-    background: #00abee07;
+}
+
+section.professional-highlight{
+    display: flex;
+}
+
+section.professional-highlight h2{
+    margin: 0 auto;
 }
 
 section.visit{
     display: flex;
     justify-content: space-around;
+    background: #00abee07;
 }
 
 #mapid{
