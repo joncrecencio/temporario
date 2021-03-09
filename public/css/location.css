@@ -1,6 +1,7 @@
 main.location{
     width: 100%;
     padding: 60px 0;
+    background: #00abee07;
 }
 
 section.professional-highlight{
@@ -14,7 +15,15 @@ section.professional-highlight h2{
 section.visit{
     display: flex;
     justify-content: space-around;
-    background: #00abee07;
+}
+
+.pointer{
+    cursor: pointer;
+}
+
+.pointer span{
+    border-bottom: 1px solid var(--color);
+    padding: 2px 0;
 }
 
 #mapid{
