@@ -42,9 +42,13 @@ a{
 .topo{
     width: 100%;
     height: 50px;
-    background: var(--color-topo);
-    background: linear-gradient(135deg, var(--color-topo-transparent) 0%, var(--color-topo-gradient-escuro) 64%, var(--color-topo-gradient-escuro-transparent) 96%);
+    /*background: var(--color-topo);
+    background: linear-gradient(135deg, var(--color-topo-transparent) 0%, var(--color-topo-gradient-escuro) 64%, var(--color-topo-gradient-escuro-transparent) 96%);*/
     padding: 0 2%;
+    background: #00bf8f;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #001510, #00bf8f);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #001510, #00bf8f); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 }
 
 .topo .center{
@@ -256,176 +260,66 @@ header .menu_desktop a{
     opacity: 1;
 }
 
-/* FOOTER */
-footer{
-    width: 100%;
-    padding: 25px 2%;
-    background: var(--background-footer);
-    color: white;
-}
+/*PLANOS*/
 
-footer .center{
-    max-width: 1100px;
-}
-
-footer a{
-    text-decoration: none;
-    margin-left: 1px;
-    color: var(--color-footer-links);
-    font-weight: 700;
-}
-
-footer .copy{
-    width: 100%;
-    margin-top: 50px;
-    color: var(--color-footer-links);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-footer .copy.dev{
-    margin-top: 8px;
-    font-size: 12px;
-}
-
-footer .copy.dev a{
-    margin-left: 2px;
-}
-
-#btn_top{
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background: var(--background-btn-top);
-    color: white;
-    padding: 8px;
-
-    border-radius: 8px;
-    font-size: 30px;
-    transition: 600ms;
-    display: none;
-    cursor: pointer;
-    z-index: 999;
-}
-
-.contact-footer{
-    display: flex;
-    justify-content: space-between;
-    padding: 40px 0 50px;
-}
-
-.contact-us{
+.planos{
     display: flex;
     flex-direction: column;
-}
-
-.contact-us p{
-    margin-bottom: 12px;
-    font-size: 20px;
-    font-weight: 700;
-}
-
-.headset{
-    display: flex;
     align-items: center;
-    padding: 8px 0;
+    justify-content:center;
+    width: 100%;
+    min-height: 100vh;
 }
 
-.headset i{
-    font-size: 24px;
-}
-
-.headset span{
-    margin-left: 8px;
-    font-size: 20px;
-    font-weight: 300;
-}
-
-.social-media{
+.header-planos{
+    width: 100%;
+    height: 8rem;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 8px 0;
-}
-
-.social-media i{
-    font-size: 28px;
-    cursor: pointer;
-    transition: 600ms;
-}
-
-.social-media .red:hover{
-    color: #c4302b;
-    transition: 600ms;
-    transform: scale(1.1, 1.1);
-}
-
-.social-media .blue-linkedin:hover{
-    color: #4bbef3fd;
-    transition: 600ms;
-    transform: scale(1.1, 1.1);
-}
-
-.social-media .aquablue:hover{
-    color: #00acee;
-    transition: 600ms;
-    transform: scale(1.1, 1.1);
-}
-
-.social-media .blue:hover{
-    color: #3b5998;
-    transition: 600ms;
-    transform: scale(1.1, 1.1);
-}
-
-.social-media .rose:hover{
-    color: #ffcbdb;
-    transition: 600ms;
-    transform: scale(1.1, 1.1);
-}
-
-.general-services{
-    display: flex;
-    justify-content: space-between;
-    gap: 20px;
-}
-
-.general-services .our-services{
-    display: flex;
-    flex-direction: column;
-}
-
-.general-services .our-services img{
-    margin: 0 auto;
-    padding: 30px 0;
-    width: 100px;
-}
-
-.general-services .our-services p.doctor{
-    font-size: 10px;
-    color: #cccc;
-    line-height: 10px;
+    align-items:flex-end;
+    justify-content:center;
     text-align: center;
+    padding: 15px;
+    color: var(--color);
+    transform: uppercase;
 }
 
-
-.general-services .our-services h3{
-    font-size: 20px;
-    font-weight: 700;
-    margin-bottom: 16px;
-}
-
-.general-services .our-services p{
+.header-planos h1{
     text-transform: uppercase;
-    font-size: 14px;
-    line-height: 28px;
 }
 
-.footer-developer{
+.wrapper{
+    padding:2%;
+    width: 90%;
+    min-height:100vh;
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 12px;
+}
+
+.card-plano{
+    border: 0 1px 1px 0 solid #0c7f914f;
     display: flex;
-    flex-direction: column;
-    align-items: center;
     justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    min-height: 250px;
+    transition: 300ms;
+    background-color: #f2f2f2;
+    
 }
 
+.card-plano:hover{
+    background-color: #fff;
+}
+
+.card-plano:hover img{
+    transform: scale(1.2);
+}
+
+.card-plano img{
+    padding: 2%;
+    max-width: 200px;
+    max-height: 200px;
+    object-fit:contain;
+}

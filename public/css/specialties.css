@@ -41,13 +41,13 @@ main.specialties .menu-search{
     font-size: 16px;
     background-color: white;
     overflow: hidden;
-    opacity: 0.5;
+    filter: opacity(1);
     transition: 600ms;
+    outline: transparent;
 }
 
-
 .menu-search button.selecionado{
-    opacity: 1;
+    filter: opacity(0.7);
 }
 
 .menu-search button img{
