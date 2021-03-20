@@ -69,7 +69,7 @@
             <section class="visit">
 
                 <div class="fale-conosco">
-                    <form action="" class="form-fale-conosco">
+                    <form action="" onsubmit="FormContato.submit(event)" class="form-fale-conosco">
                         <fieldset>
                             <legend>Contato</legend>
                             <div class="input-block">
@@ -79,7 +79,7 @@
 
                             <div class="input-block">
                                 <label for="whatsapp">Digite seu celular*</label>
-                                <input type="text" name="whatsapp" id="whatsapp" maxlength="13" required>
+                                <input type="text" name="whatsapp" data-js="phone" id="whatsapp" required>
                             </div><!--input-block-->
 
                             <div class="input-block">
@@ -186,5 +186,6 @@
     <script src="https://kit.fontawesome.com/f4dd9ff78b.js" crossorigin="anonymous"></script>
     <script src="/public/js/scripts.js"></script>
     <script src="/public/js/map.js"></script>
+    <script src="/public/js/formContato.js"></script>
 </body>
 </html>
