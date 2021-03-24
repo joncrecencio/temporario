@@ -1,7 +1,9 @@
 footer{
     width: 100%;
     padding: 25px 2%;
-    background: var(--background-footer);
+    background: #00bf8f; 
+    background: -webkit-linear-gradient(to left, #001510, #00bf8f);
+    background: linear-gradient(to left, #001510, #00bf8f);
     color: white;
 }
 
