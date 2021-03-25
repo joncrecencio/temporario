@@ -1,6 +1,6 @@
 const express = require('express')
 const nunjucks = require('nunjucks')
-
+const swal = require('sweetalert')
 const server = express()
 
 server.use(express.static('public'))

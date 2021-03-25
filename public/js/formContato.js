@@ -47,7 +47,12 @@ const FormContato = {
             FormContato.validateFields()
             // limpar o FormContato
             FormContato.clearFields()
-            alert("Dados enviados!")
+            swal({
+                title : "Mensagem enviada com sucesso!" , 
+                text : "Em breve nossa equipe entrará em contato!" , 
+                icon : "success" , 
+                button : " Fechar " , 
+            })
         } catch (error) {
             alert(error.message)
         } 

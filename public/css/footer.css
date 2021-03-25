@@ -88,7 +88,8 @@ footer .copy.dev a{
 .social-media{
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: initial;
+    gap: 40px;
     padding: 8px 0;
 }
 

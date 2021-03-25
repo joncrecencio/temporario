@@ -6,11 +6,11 @@
     --color-link-topo: rgba(250, 250, 250, 0.774);
     --color-box-shadow: #5d5d5d;
     --background-ul: rgba(64, 224, 208, 0.287);
-    --color:#0c7f91;
-    --background-branco-transperent: rgba(255,255,255,0.8);
+    --color: rgb(12,117,72);
+    --background-branco-transperent: rgba(255, 255, 255, 0.3);
     --background-footer: rgb(38, 136, 101);
     --color-footer-links: rgba(255, 255, 255, 0.534);
-    --background-btn-top: #0c7f919d;
+    --background-btn-top: rgba(12,117,72, 0.8);
     --color-escuro: #141414
 }
 
@@ -28,6 +28,10 @@ body{
     font-family: 'Ubuntu', sans-serif;
     width: 100%;
     height: 100%;
+}
+
+.conteSaoLucas{
+    font-weight: 400;
 }
 
 .center{
@@ -88,15 +92,15 @@ a{
 
 .card h1{
     font-size: 1.3rem;
+    font-weight: 300;
 }
 
 .card_image{
     width:100%;
     height: 100%;
     position: relative;
-    /* border-radius: 8px;
-    overflow: hidden; */
 }
+
 .card_image img{
     position: absolute;
     width: 100%;
@@ -104,6 +108,12 @@ a{
     box-shadow: 0 0 5px 0;
     border-radius: 8px;
     overflow: hidden;
+    transition: 300ms;
+}
+
+.card_image:hover img{
+    transition: 300ms;
+    filter: opacity(0.4);
 }
 
 .card_text p{

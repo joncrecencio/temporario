@@ -42,7 +42,12 @@ const Form = {
             Form.validateFields()
             // limpar o form
             Form.clearFields()
-            alert("Dados enviados!")
+            swal({
+                title : "Seu currículo foi enviado com sucesso! " , 
+                text : "Boa sorte!" , 
+                icon : "success" , 
+                button : " Fechar " , 
+            })
         } catch (error) {
             alert(error.message)
         } 
@@ -67,12 +72,3 @@ function maskUtils(){
     }, false)  
 }
 maskUtils()
-
-// Código se precisar criar mascaras para todos os inputs
-// document.querySelectorAll('input').forEach(($input) => {
-//     const field = $input.dataset.js
-//     $input.addEventListener('input', (e) => {
-//         e.target.value = mask[field](e.target.value)
-//     }, false)   
-// })
-
