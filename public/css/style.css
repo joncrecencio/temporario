@@ -142,6 +142,8 @@ a{
     opacity: 1;
 }
 
+
+
 /*PLANOS*/
 
 .planos{
@@ -154,19 +156,25 @@ a{
 }
 
 .header-planos{
-    width: 100%;
-    height: 8rem;
+    width: 90%;
     display: flex;
-    align-items:flex-end;
-    justify-content:center;
+    align-items: flex-start;
+    flex-direction: column;
     text-align: center;
-    padding: 15px;
+    padding: 8rem 2% 1rem 2%;
     color: var(--color);
     transform: uppercase;
 }
 
 .header-planos h1{
     text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
+.header-planos p {
+    max-width: 350px;
+    text-align: left;
+    line-height: 26px;
 }
 
 .wrapper{
