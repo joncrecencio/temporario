@@ -106,7 +106,7 @@ function visitante(){
     modalOverlay.classList.add("ativo")
 
     modalOverlay.innerHTML =`<h2>Assistência médica e enfermagem</h2>
-    <p>É proibida a interferência de qualquer pessoa na assistência prestada ao paciente, bem como nos seus prontuários. Todas as informações sobre o paciente serão transmitidas pelo Médico Assistente, sempre pessoalmente. Em caso de dúvidas, solicite sempre a presença de um Enfermeiro Chefe.</p>
+    <p>É proibida a interferência de qualquer pessoa na assistência prestada ao paciente, bem como nos seus prontuários.</p>
     <h2>Horários para visita</h2>
     <div class="horarios">
         <p>Maternidade Enfermaria (Semi-Privativo):</p>

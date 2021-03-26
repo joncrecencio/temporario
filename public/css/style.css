@@ -360,6 +360,7 @@ a{
     width: 95%;
     max-width: 550px;
     height: auto;
+    max-height: 650px;
     border-radius: 4px;
     background-color: #fff;
     margin: auto;
