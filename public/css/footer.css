@@ -49,7 +49,7 @@ footer .copy.dev a{
     transition: 600ms;
     display: none;
     cursor: pointer;
-    z-index: 999;
+    z-index: 998;
 }
 
 .contact-footer{
