@@ -331,7 +331,12 @@ a{
 
 /* MODAL */
 
-.modal.active{
+.modal{
+    opacity: 0;
+    visibility: hidden;
+}
+
+.modal.ativo{
     height: 100%;
     width: 100%;
     position: fixed;
@@ -341,9 +346,17 @@ a{
     align-items: center;
     justify-content: center;
     z-index: 999;
+    opacity: 1;
+    visibility: visible;
 }
 
 .modal-overlay{
+    opacity: 0;
+    visibility: hidden;
+    display: none;
+}
+
+.modal-overlay.ativo{
     width: 95%;
     max-width: 550px;
     height: auto;
@@ -352,6 +365,9 @@ a{
     margin: auto;
     box-shadow: .3rem .3rem 20px rgba(0, 0, 0, 0.3);
     animation: zoom 1s;
+    opacity: 1;
+    visibility: visible;
+    display: block;
 }
 
 .modal-overlay h2{

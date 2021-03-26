@@ -41,7 +41,8 @@ function prontoAtendimento(){
     const modal = document.querySelector(".modal")
     const modalOverlay = document.querySelector(".modal-overlay")
 
-    modal.classList.toggle("active")
+    modal.classList.add("ativo")
+    modalOverlay.classList.add("ativo")
 
     modalOverlay.innerHTML = `<h2>Pronto Atendimento</h2>
     <ul>
@@ -79,7 +80,8 @@ function maternidade(){
     const modal = document.querySelector(".modal")
     const modalOverlay = document.querySelector(".modal-overlay")
 
-    modal.classList.toggle("active")
+    modal.classList.add("ativo")
+    modalOverlay.classList.add("ativo")
 
     modalOverlay.innerHTML =`<h2>Momento especial</h2>
     <img src="/images/maternidade-sao-lucas.jpg" alt="">
@@ -100,7 +102,8 @@ function visitante(){
     const modal = document.querySelector(".modal")
     const modalOverlay = document.querySelector(".modal-overlay")
 
-    modal.classList.toggle("active")
+    modal.classList.add("ativo")
+    modalOverlay.classList.add("ativo")
 
     modalOverlay.innerHTML =`<h2>Assistência médica e enfermagem</h2>
     <p>É proibida a interferência de qualquer pessoa na assistência prestada ao paciente, bem como nos seus prontuários. Todas as informações sobre o paciente serão transmitidas pelo Médico Assistente, sempre pessoalmente. Em caso de dúvidas, solicite sempre a presença de um Enfermeiro Chefe.</p>
@@ -142,7 +145,8 @@ function rotinaInternacao(){
     const modal = document.querySelector(".modal")
     const modalOverlay = document.querySelector(".modal-overlay")
 
-    modal.classList.toggle("active")
+    modal.classList.add("ativo")
+    modalOverlay.classList.add("ativo")
 
     modalOverlay.innerHTML =`<h2>Internação</h2>
     <p>O cliente ou seu responsável deverá fornecer todos os dados de identificação solicitados, bem como apresentar os documentos necessários (RG, CPF, carteirinha de convênio). A internação só poderá ser realizada a partir de um pedido médico, seja em uma cirurgia eletiva ou internações de emergência.</p>
@@ -160,5 +164,10 @@ function rotinaInternacao(){
 
 function closeModal(){
     const modal = document.querySelector(".modal")
-    modal.classList.remove("active")
+    const modalOverlay = document.querySelector(".modal-overlay")
+    modal.classList.remove("ativo")
+    modalOverlay.classList.remove("ativo")
+
 }
+
+
