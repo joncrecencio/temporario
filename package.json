@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/joncrecencio/temporario#readme",
   "dependencies": {
+    "cors": "^2.8.5",
     "express": "^4.17.1",
     "nunjucks": "^3.2.3",
     "sweetalert": "^2.1.2"

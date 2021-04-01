@@ -1,39 +1,40 @@
 const express = require('express')
+const cors = require('cors')
 const nunjucks = require('nunjucks')
-const swal = require('sweetalert')
-const server = express()
+const app = express()
 
-server.use(express.static('public'))
+app.use(cors())
 
-server.set('view engine', 'njk')
+app.use(express.static('public'))
+app.set('view engine', 'njk')
 nunjucks.configure("views", {
-    express: server,
+    express: app,
     autoescape:false,
     noCache: true
 })
 
 
-server.get("/", (req, res) => {
+app.get("/", (req, res) => {
     return res.render('index.html')
 })
 
-server.get("/sobre", (req, res) => {
+app.get("/sobre", (req, res) => {
     return res.render('localizacao.html')
 })
 
-server.get("/especialidades", (req, res) => {
+app.get("/especialidades", (req, res) => {
     return res.render('especialidade.html')
 })
 
-server.get("/mater", (req, res) => {
+app.get("/mater", (req, res) => {
     return res.render('planomater.html')
 })
 
-server.get("/trabalhe-conosco", (req, res) => {
+app.get("/trabalhe-conosco", (req, res) => {
     return res.render('trabalhe-conosco.html')
 })
 
 
-server.listen(3000, () => {
+app.listen(3000, () => {
     console.log("ok, rodando")
 })
