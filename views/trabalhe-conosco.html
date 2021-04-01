@@ -57,12 +57,17 @@
     <main class="trabalhe-conosco">
         <div class="center">
             <section class="jobOffer">
-                <form action="" method="POST" onsubmit="Form.submit(event)">
+                <form name="form" action="" method="POST" onsubmit="Form.submit(event)">
                     <fieldset class="dados-pessoais">
                         <legend> Dados Pessoais </legend>
                         <div class="inputs">
                             <label for="fullName">Nome Completo*</label>
                             <input type="text" id="fullName" name="fullName" maxlength="40" required>
+                        </div><!--inputs-->
+
+                        <div class="inputs">
+                            <label for="vaga">Digite a Vaga Desejada*</label>
+                            <input type="text" id="vaga" name="vaga" maxlength="40" required>
                         </div><!--inputs-->
 
                         <div class="inputs">
@@ -81,8 +86,8 @@
                         </div><!--inputs-->
 
                         <div class="inputs">
-                            <label for="complemento">Complemento</label>
-                            <input type="text" id="complemento" name="complemento" placeholder="opcional">
+                            <label for="complement">Complemento</label>
+                            <input type="text" id="complement" name="complement" placeholder="opcional">
                         </div><!--inputs-->
 
                         <div class="inputs">
@@ -93,16 +98,108 @@
                         <div class="inputs">
                             <label for="localidade">Cidade*</label>
                             <input type="text" id="localidade" name="localidade" disabled required>
-                            <button class="btn" type="submit">Enviar!</button>
                         </div><!--inputs-->
+                        <button type="button" id="liberaEscolaridade" class="btn btn-curriculo">Próximo!</button>
                     </fieldset><!--dados-pessoais-->
 
-                    <fieldset class="escolaridade">
+                    <fieldset class="escolaridadeXP escolaridadeOculta">
+                        <legend>Escolaridade & Cursos</legend>
+                        <div class="inputs">
+                            <label for="escolaridade">Escolaridade*</label>
+                            <select name="escolaridade" id="escolaridade" required>
+                                <option value="0" selected disabled>Selecione seu último grau de escolaridade</option>
+                                <option value="1">Ensino Fundamental Incompleto</option>
+                                <option value="2">Ensino Fundamental Completo</option>
+                                <option value="3">Ensino Técnico</option>
+                                <option value="4">Ensino Superior Incompleto</option>
+                                <option value="5">Ensino Superior Completo</option>
+                                <option value="6">Pós-graduação / MBA</option>
+                            </select>
+                        </div><!--inputs-->
 
+                        <div class="inputs">
+                            <label for="idiomas">Idiomas</label>
+                            <select name="idiomas" id="idiomas">
+                                <option value="selecione" selected disabled>Selecione um idioma adicional se houver</option>
+                                <option value="ingles">Inglês</option>
+                                <option value="espanhol">Espanhol</option>
+                                <option value="frances">Francês</option>
+                                <option value="alemao">Alemão</option>
+                                <option value="sem_idioma">Sem idioma adicional</option>
+                            </select>
+                        </div><!--inputs-->
+
+                        <div class="inputs">
+                            <label for="nivel">Nível</label>
+                            <select name="nivel" id="nivel">
+                                <option value="selecione_nivel" selected disabled>Selecione o nível do idioma</option>
+                                <option value="basico">Básico</option>
+                                <option value="intermediario">Intermediário</option>
+                                <option value="avancado">Avançado</option>
+                            </select>
+                        </div><!--inputs-->
+
+                        <fieldset class="possuiCursos">
+                            <legend>Possui cursos?</legend>
+                            <div class="inputs flex-ajuste">
+                                <div class="flex">
+                                    <label for="positivo">Sim</label>
+                                    <input type="radio" name="cursosEx" value="positivo" id="positivo">
+                                </div>
+
+                                <div class="flex">
+                                    <label for="negativo">Não</label>
+                                    <input type="radio" name="cursosEx" value="negativo" id="negativo">
+                                </div>
+                            </div>
+                        </fieldset><!--possuiCursos-->
+
+
+                        <div class="extraCurriculares oculto">
+                            <div class="inputs extras">
+                                <label for="cursos_extras">Último Curso</label>
+                                <input type="text" id="cursos_extras" name="cursos_extras" maxlength="60">
+                            </div><!--inputs-->
+
+                            <div class="inputs extras">
+                                <label for="descricao_curso">Descrição do último curso</label>
+                                <textarea type="text" id="descricao_curso" name="descricao_curso"></textarea>
+                            </div><!--inputs-->
+                        </div>
+                        <button type="button" id="liberaExperiencia" class="btn btn-curriculo">Próximo!</button>
                     </fieldset><!--escolaridade-->
 
-                    <fieldset class="experiencia">
+                    <fieldset class="experiencia XPOculta">
+                        <legend>Última experiência de Trabalho</legend>
 
+                        <div class="inputs">
+                            <label for="empresaName">Empresa: </label>
+                            <input type="text" id="empresaName" name="empresaName" maxlength="60">
+                        </div><!--inputs-->
+
+                        <div class="flex-date">
+                            <div class="inputs flexDouble">
+                                <label for="dataInicio">Data início</label>
+                                <input type="date" id="dataInicio" name="dataInicio">
+                            </div><!--inputs-->
+                            
+                            <div class="inputs">
+                                <label for="dataFim flexDouble">Data Fim</label>
+                                <input type="date" id="dataFim" name="dataFim">
+                            </div><!--inputs-->
+
+                            <div class="inputs checkboxStyle">
+                                <label for="dataFimAtual" class="small">Atualmente</label>
+                                <input type="checkbox" name="dataFimAtual" id="dataFimAtual">
+                            </div><!--inputs-->
+                        </div><!--flex-date-->
+
+                        <div class="inputs">
+                            <label for="descrevaXP">Descreva sua experiência</label>
+                            <textarea type="text" id="descrevaXP" name="descrevaXP"></textarea>
+                        </div><!--inputs-->
+
+                        <button type="submit" id="submitCV" class="btn btn-curriculo" type="submit">Enviar!</button>
                     </fieldset>
                 </form>
             </section><!--jobOffer-->

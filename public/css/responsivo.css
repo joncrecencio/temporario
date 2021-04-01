@@ -118,6 +118,14 @@
         margin: 0 auto;
     }
 
+    .inputs{
+        width: 100%;
+    }
+
+    .btn-curriculo{
+        width: 100%;
+    }
+
     .wrapper{
         grid-template-columns: 1fr 1fr;
     }
