@@ -184,5 +184,9 @@
         align-items: center;
         justify-content: center;
     }
+
+    footer .copy{
+        font-size: 12px;
+    }
 }
 

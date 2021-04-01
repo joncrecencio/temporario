@@ -85,10 +85,13 @@ a{
     width: 100%;
     height: 100%;
     display: none;
+    object-fit:cover;
+    
 }
 
 .banner img.selected{
     display: block;
+    overflow: hidden;
 }
 
 /* conteudo */
@@ -115,8 +118,8 @@ a{
 }
 
 .card{
-    width: 250px;
-    height:300px;
+    width: 300px;
+    height:250px;
     display:flex;
     flex-direction: column;
     margin: 0 auto;
