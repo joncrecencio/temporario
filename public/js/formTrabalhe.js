@@ -137,7 +137,7 @@ const Form = {
             // limpar o form
             Form.clearFields()
             swal({
-                title : "Seu currículo foi enviado com sucesso! " , 
+                title : "Seus dados foram enviados com sucesso! " , 
                 text : "Boa sorte!" , 
                 icon : "success" , 
                 button : " Fechar " , 
