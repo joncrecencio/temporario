@@ -17,6 +17,8 @@ const Form = {
         }
     },
 
+
+
     validateFields(){
         const {fullName, whatsappOpportunity, emailOpportunity, subjectOpportunity,instructionsOpportunity, fileCurriculum} = Form.getValues()
 
@@ -24,6 +26,20 @@ const Form = {
             throw new Error("Por favor, preencha todos os campos!")
         }
     },
+
+    // email(){
+    //     const sendgrid = sajkdnbajsndna
+    //     const {fullName, whatsappOpportunity, emailOpportunity, subjectOpportunity,instructionsOpportunity, fileCurriculum} = Form.getValues()
+
+    //     envioemail = {
+    //         to: 'jonathan@gmail.com',
+    //         from: 'jonathan@gmail.com',
+    //         replyTo: emailOpportunity,
+    //         subject: subjectOpportunity,
+    //         message: instructionsOpportunity,
+    //         attachment: fileCurriculum
+    //     }
+    // },
  
     clearFields(){
         Form.fullName.value = ""
