@@ -48,6 +48,8 @@ const mask = {
 
 const Form = {
     fullName: document.querySelector('#fullName'),
+    telPhone: document.querySelector('#telPhone'),
+    emailVaga: document.querySelector('#emailVaga'),
     vaga: document.querySelector('#vaga'),
     cep: document.querySelector('#cep'),
     logradouro: document.querySelector('#logradouro'),
@@ -73,6 +75,8 @@ const Form = {
     getValues(){
         return {
             fullName: Form.fullName.value,
+            telPhone: Form.telPhone.value,
+            emailVaga: Form.emailVaga.value,
             vaga: Form.vaga.value,
             cep: Form.cep.value,
             logradouro: Form.logradouro.value,
@@ -96,15 +100,17 @@ const Form = {
     },
 
     validateFields(){
-        const {fullName, vaga, cep, logradouro, numero,bairro, localidade} = Form.getValues()
+        const {fullName, telPhone, emailVaga, vaga, cep, logradouro, numero,bairro, localidade} = Form.getValues()
 
-        if( fullName.trim() === "" && vaga.trim() === "" && cep.trim() === "" && logradouro.trim() === "" && numero.trim() === "" && bairro.trim() === "" && localidade.trim() === "" ){
+        if( fullName.trim() === "" && telPhone.trim() === "" && emailVaga.trim() === "" && vaga.trim() === "" && cep.trim() === "" && logradouro.trim() === "" && numero.trim() === "" && bairro.trim() === "" && localidade.trim() === "" ){
             throw new Error("Por favor, preencha todos os campos!")
         }
     },
  
     clearFields(){
         Form.fullName.value = ""
+        Form.telPhone.value = ""
+        Form.emailVaga.value = ""
         Form.vaga.value = ""
         Form.cep.value = ""
         Form.logradouro.value = ""
