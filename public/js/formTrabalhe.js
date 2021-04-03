@@ -23,8 +23,19 @@ function preencheCEP(){
         .catch((e) => {console.log('Deu erro ' + e.message)})  
     })
 
+
+}
+
+function preencheMask(){
+    const cep = document.querySelector('#cep')
+    const telPhone = document.querySelector('#telPhone')
+
     cep.addEventListener('input', (e) => {
         e.target.value = mask.cep(e.target.value)
+    }, false) 
+
+    telPhone.addEventListener('input', (e) => {
+        e.target.value = mask.phone(e.target.value)
     }, false) 
 }
 
@@ -202,6 +213,7 @@ function appear(){
     })
 }
 
+preencheMask()
 preencheCEP()
 appear()
 capturaRadioAndCheckbox()
